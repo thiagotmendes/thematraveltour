@@ -1,0 +1,94 @@
+.logo{
+  height: 50px;
+  background-color: $corPadrao;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.banner{
+  margin-bottom: 30px;
+}
+
+.box-pesquisa{
+  background-color: $corPadrao;
+  padding: 20px 18px;
+
+  h3{
+    margin-top: 0px;
+    color: $amarelo;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+.box-agencia-home{
+  background-color: $backgroundCorAgencia;
+  border: #ccc solid 1px;
+  margin-bottom: 15px;
+
+  h3{
+    margin-top: 0px;
+    text-transform: uppercase;
+
+    a{
+      color: $corPadrao;
+    }
+
+    a:hover{
+      color: $hoverItens;
+      text-decoration: none;
+    }
+  }
+
+  .desc-agencia{
+    margin-top: 10px;
+  }
+
+  .img-agencia{
+    padding-left: 0px;
+  }
+}
+
+.ajust-btn-info{
+  margin-top: 30%;
+
+  .btn-informacoes{
+    background-color: $corPadrao;
+    color: #fff;
+    border-radius: 0px;
+    transition-duration: 0.3s;
+  }
+
+  .btn-informacoes:hover{
+    background-color: $hoverItens;
+    color: #fff;
+  }
+}
+
+footer{
+  margin-top: 30px;
+  background-color: $corPadrao;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-site{
+  background-color: $corPadrao;
+  border-radius: 0px;
+
+  .navbar-nav > li > a{
+    color: #fff;
+  }
+
+  .navbar-nav > li > a:hover,
+  .navbar-nav > li > a:focus{
+    background-color: $hoverItens;
+  }
+
+  .navbar-nav > li.active > a,
+  .navbar-nav > li.active > a:focus,
+  .navbar-nav > li.active > a:hover{
+    background-color: $hoverItens;
+  }
+}
