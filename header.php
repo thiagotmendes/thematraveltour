@@ -19,14 +19,19 @@
   <body>
     <header>
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="logo">
-              <a class="" href="#">
-                <img src="" alt="">
-              </a>
+        <div class="header-logo">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="logo">
+                <a class="" href="#">
+                  <img src="" alt="">
+                </a>
+              </div>
             </div>
-          </div>
+            <div class="col-md-9">
+              <?php if(get_option( 'po_codads', '' )) echo html_entity_decode( get_option( 'po_codads', '' ) ) ?>
+            </div>
+        </div>
         </div>
       </div>
 

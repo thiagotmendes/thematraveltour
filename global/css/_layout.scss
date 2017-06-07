@@ -8,6 +8,95 @@
 
 .banner{
   margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.conteudo-interno{
+  min-height: 400px;
+}
+
+.titulo-interno{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.footer-single{
+  border-top: #ccc 1px solid;
+  margin-top: 30px;
+
+  .author{
+    background-color: #f1f1f1;
+  }
+}
+
+.header-logo{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.blocos-noticias{
+
+  figure img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .prevs{
+    border-top: #c3c3c3 solid 1px;
+    border-bottom: #c3c3c3 solid 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+.barra-menu-interno{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  //border-bottom: $corPadrao solid 3px;
+
+  .nav-tabs {
+    border-bottom: 1px solid $corPadrao;
+  }
+
+  .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: 1px solid $corPadrao;
+    border-bottom-color: transparent;
+  }
+}
+
+.caixa-servico{
+  margin-top: 30px;
+}
+
+.social{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+
+  li{
+    float: left;
+    margin-left: 4px;
+    margin-right: 4px;
+
+    a{
+      border: #fff solid 1px;
+      padding:2px 7px 3px;
+      color: #fff;
+      font-size: 24px;
+      transition-duration: 1s;
+      border-radius: 50%;
+    }
+
+    a:hover{
+      border: $amarelo solid 1px;
+      background-color: $amarelo;
+      color:#fff;
+      text-decoration: none;
+    }
+  }
 }
 
 .box-pesquisa{
@@ -70,25 +159,44 @@ footer{
   margin-top: 30px;
   background-color: $corPadrao;
   padding-top: 20px;
-  padding-bottom: 20px;
+  color: #fff;
+  font-size: 15px;
+
+  section{
+    background-color: rgb(22,141,175);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  h4{
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
 
 .navbar-site{
   background-color: $corPadrao;
   border-radius: 0px;
+  margin-bottom: 0px;
 
   .navbar-nav > li > a{
     color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
   .navbar-nav > li > a:hover,
   .navbar-nav > li > a:focus{
     background-color: $hoverItens;
+    color: #000;
   }
 
   .navbar-nav > li.active > a,
   .navbar-nav > li.active > a:focus,
   .navbar-nav > li.active > a:hover{
     background-color: $hoverItens;
+    color: #000;
   }
 }

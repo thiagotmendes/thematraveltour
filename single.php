@@ -34,20 +34,40 @@
                 <span><i class="flaticon-chat"></i></span>
                 <?php comments_number( 'Nenhum comentário', '1 Comentário', '% Comentários' ); ?>
               </div>
-              <p> <?php the_excerpt_limit(30) ?> </p>
-              <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                  <a href="<?php the_permalink() ?>" class="btn btn-success btn-block">
-                    Saiba mais
-                  </a>
-                </div>
-              </div>
+              <?php the_content() ?>
             </article>
           <?php endwhile ?>
         <?php else: ?>
           Nenhum post encontrado
         <?php endif; ?>
-        <?php wp_pagination() ?>
+
+        <div class="footer-single">
+          <?php $tag_single = get_the_tags( $post->ID ); ?>
+          <?php if (!empty($tag_single)): ?>
+            <hr>
+            <div class="tags">
+              <?php the_tags( 'Tags: ', ', ', '<br />' ); ?>
+            </div>
+            <hr>
+          <?php endif ?>
+
+          <div class="author">
+            <div class="row">
+              <div class="col-md-2 img-author">
+                <?php $email = get_the_author_email();
+                $grav_url = "http://www.gravatar.com/avatar.php?gravatar_id=".md5($email). "&default=".urlencode($GLOBALS['defaultgravatar'] );
+                $usegravatar = get_option('woo_gravatar');?>
+                <img src="<?php echo $grav_url; ?>" alt=""/>
+              </div>
+              <div class="col-md-10">
+                <h4 class="nome-author"><a href = "<?php the_author_url ();?>" itemprop="url"><?php the_author(); ?></a></h4>
+                <?php the_author_description();?>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <?php comments_template(); ?>
+        </div>
       </div>
       <div class="col-md-4">
         <?php get_sidebar() ?>
