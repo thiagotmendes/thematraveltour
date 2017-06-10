@@ -1,6 +1,5 @@
 jQuery(document).ready(function($) {
-  $('.banner-home').slick({
-    autoplay: true,
-    arrows: true,
-  });
+   $('.banner-home').bxSlider({
+     auto: true,
+   });
 });

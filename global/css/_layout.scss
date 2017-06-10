@@ -31,6 +31,29 @@
   }
 }
 
+.comment-respond{
+  label{
+    display: block;
+  }
+
+  input{
+    width: 100%;
+  }
+
+  textarea{
+    width: 100%;
+  }
+
+  .submit{
+    background-color: #0abbb5;
+    border: 0px;
+    border-radius: 0x;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #fff;
+  }
+}
+
 .header-logo{
   padding-top: 10px;
   padding-bottom: 10px;

@@ -5,7 +5,7 @@
   ?>
     <section class="banner">
       <div class="container">
-        <div class="banner-home">
+        <ul class="banner-home">
           <?php
           if( have_rows('banner') ):
             while( have_rows('banner') ): the_row();
@@ -13,12 +13,12 @@
               $link = get_sub_field('link');
               $target = get_sub_field('target');
               ?>
-              <img src="<?php echo $image['url'] ?>" alt="">
+              <li><img src="<?php echo $image['url'] ?>" alt=""></li>
               <?php
             endwhile;
           endif;
           ?>
-        </div>
+        </ul>
       </div>
     </section>
   <?php

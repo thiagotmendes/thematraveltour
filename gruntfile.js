@@ -29,7 +29,8 @@ module.exports   = function(grunt){
                 'bower_components/font-awesome/css/font-awesome.css',
                 'bower_components/animate.css/animate.css',
                 'bower_components/slick-carousel/slick/slick.css',
-                'bower_components/slick-carousel/slick/slick-theme.css'
+                'bower_components/slick-carousel/slick/slick-theme.css',
+                'bower_components/bxslider-4/src/css/jquery.bxslider.css',
               ]
           }
         }
@@ -52,7 +53,8 @@ module.exports   = function(grunt){
               'bower_components/bootstrap/dist/js/bootstrap.js',
               'bower_components/slick-carousel/slick/slick.js',
               'bower_components/wow/dist/wow.js',
-              'bower_components/isotope/dist/isotope.pkgd.js'
+              'bower_components/isotope/dist/isotope.pkgd.js',
+              'bower_components/bxslider-4/src/js/jquery.bxslider.js'
             ],
             'assets/js/funcoes.min.js': ['global/js/funcoes.js'],
           }
@@ -67,6 +69,7 @@ module.exports   = function(grunt){
             {expand: true,flatten: true, src: ['bower_components/bootstrap/fonts/*'], dest: 'assets/fonts/'},
             {expand: true,flatten: true, src: ['bower_components/slick-carousel/slick/fonts/*'], dest: 'assets/fonts/'},
             {expand: true,flatten: true, src: ['bower_components/slick-carousel/slick/ajax-loader.gif'], dest: 'assets/images'},
+            {expand: true,flatten: true, src: ['bower_components/bxslider-4/src/images/*'], dest: 'assets/images'},
           ],
         },
       },
